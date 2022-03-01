@@ -70,5 +70,13 @@ console.log(students.reduce((acc,el)=>{
     return acc
 } , {}))
 
-
+export const Wrapper  = () => {
+    return <user city="minsk" />
+}
+type PropsType = {
+    city: string
+}
+export const user: React.FC<PropsType> = ({city}) => {
+    return <div>hello</div>
+}
 
